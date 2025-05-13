@@ -36,3 +36,10 @@ auto modify_x = [&x]() {
 modify_x();
 std::cout << x << std::endl;  // 输出 15
 ```
+回到ros2cpp下：完整代码见ros2bookcode/chapt3/topic_ws/src/demo_cpp_topic/src/turtlecircle.cpp
+
+```cpp
+    timer_ = this->create_wall_timer(
+    1000ms,
+    [this]() { timer_callback(); })
+```
