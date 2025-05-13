@@ -21,7 +21,7 @@ int main() {
 }
 ```
 正常的话是不行的，因为greet应该接受一个Person类型的对象，但是没有 explicit 时，编译器会自动帮你调用：
-Person p = Person("Alice")
+```Person p = Person("Alice")  //这里Person()是强制类型转换```
 所以代码能正常运行。
 
 ---
